@@ -19,6 +19,7 @@ router.get('/departments', (req, res) => {
   })
 })
 
+
 // Show department
 router.get('/department/:id', (req, res) => {
   const sql = `SELECT * FROM departments WHERE id = ?`
@@ -62,4 +63,4 @@ router.post('/department', ({ body }, res) => {
   })
 })
 
-module.exports = router;
+module.exports = router
